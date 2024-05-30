@@ -1,0 +1,43 @@
+<h2><b>הוספת עובד</b></h2>
+<div class="container">
+  <div class="employee-form">
+<form [formGroup]="employeeForm" class="mt-5">
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" formControlName="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" formControlName="lastName">
+    </div>
+    <div class="form-group">
+      <label for="tz">TZ</label>
+      <input type="text" class="form-control" id="tz" formControlName="tz">
+    </div>
+    <div class="form-group">
+      <label for="startWork">Start Work</label>
+      <input type="date" class="form-control" id="startWork" formControlName="startWork">
+    </div>
+    <div class="form-group">
+      <label for="birthDate">Birth Date</label>
+      <input type="date" class="form-control" id="birthDate" formControlName="birthDate">
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select class="form-control" id="gender" formControlName="gender">
+          <option value=1>Male</option>
+          <option value=2>Female</option>
+      </select>
+    </div>
+    <!-- <button mat-fab extended color="primary" (click)="addRole()">
+      <mat-icon>add_circle</mat-icon>
+      Add Role
+    </button> -->
+    <button mat-fab matTooltip="Primary" color="primary" aria-label="Example fab with a heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+  </form>
+  </div>
+</div>
+  
